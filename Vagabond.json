@@ -1,0 +1,917 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "VagabondChronicles",
+				"abbreviation": "VGC",
+				"full": "Vagabond Chronicles",
+				"version": "1.0",
+				"authors": [
+					"Luka Dautović"
+				],
+				"color": "af878c"
+			}
+		],
+		"dateAdded": 1705189231,
+		"dateLastModified": 1706228568
+	},
+	"spell": [
+		{
+			"name": "Bond Item",
+			"source": "VagabondChronicles",
+			"page": 7,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"You touch an item weighing no more than 100 pounds and form a link between you and it. Until the spell ends, you can recall it to your hand as a bonus action.",
+				"If another creature is holding or wearing the item when you try to recall it, they make a Charisma saving throw to retain possession of the item, and if they succeed, the spell fails. They make this save with advantage if they have had possession of the item for more than 1 minute."
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			}
+		},
+		{
+			"name": "Hekkeag's Major Chain Lightning",
+			"level": 9,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"While concentrating on this spell you can't take actions or reactions and your movement speed is halved. At the beginning of each of your turns you take {@damage 4d6} lightning damage for each turn you spent concentrating on this spell.",
+				"When you cast this spell a powerful bolt of lightning hurls towards a target creature or object within range. Each additional turn you spend concentrating on this spell you may choose twice as many targets, up to 16 targets, as each bolt forks into two and you may choose a single target more than once. Divide {@damage 64d6} lightning damage evenly between all targets.",
+				"A target must make a Dexterity saving throw for each time it was chosen. On a successful save the target takes half as much damage."
+			],
+			"source": "VagabondChronicles",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bit of fur; a piece of amber, glass, or a crystal rod; and three silver pins"
+			}
+		}
+	],
+	"feat": [
+		{
+			"name": "Grant Minor Wish",
+			"source": "VagabondChronicles",
+			"page": 1,
+			"entries": [
+				"Once per long rest as an action you can draw upon your innate primordial power to fully grant a mortal being's minor desire. No mortal can have two minor wishes granted within 7 days of each other. You are immune to any effects this wish can produce, and their scope is narrow. It can produce, but is not limited to, the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Wish For Magic: Duplicate any other spell of 1st level. You don't need to meet any requirements in that spell, including costly components. The spell simply takes effect. The caster of this spell can be you or the creature that made the wish.",
+						"Wish For Artifact: Replicate a magic item from among the common magic items in the game, not including potions or scrolls. The item disappears in 8 hours.",
+						"Wish For Restoration: You allow the creature that made the wish to regain {@damage 1d6} hit points, and you end one effect on them described in the lesser restoration spell.",
+						"Wish For Protection: Grant the creature that made the wish a +1 bonus to AC and saving throws for 8 hours.",
+						"Wish For Accuracy: Grant the creature that made the wish a +1 bonus to attack and damage rolls for 8 hours.",
+						"Wish For Aid: Grant the creature that made the wish and two other creatures increased toughness and resolve. Each target's hit point maximum and current hit points increase by 5 for 8 hours.",
+						"Wish For Knowledge: The creature gains proficiency in a single skill for 8 hours",
+						"Wish For Ability: The creature gains advantage on ability score checks of their choice for an hour"
+					]
+				}
+			]
+		},
+		{
+			"name": "Efreeti Wish Granting",
+			"source": "VagabondChronicles",
+			"page": 2,
+			"entries": [
+				"In times immemorial the primordials gathered to limit their power in order to keep both their own and the mortal worlds in balance. They decided they would allow themselves to keep some of their former might, but only to help those around them who needed it the most. As a primordial these edicts now apply to you as well:",
+				{
+					"type": "list",
+					"items": [
+						"The Wish spell is permanently removed from all of your spell lists, and you may never learn or cast it unless you cast it innately.",
+						"At 17th level you gain the ability to cast Wish innately 3 times per decade. At 20th level this amount increases to 9 times per decade.",
+						"You may only cast the Wish spell at the behest of a mortal creature, and you may only grant a wish to a mortal creature a total of 3 times. When you grant a wish this way you may choose to pervert the wish to your liking, as long as you adhere to the strict wording of the wish. However, even if you do not intentionally pervert the wish the outcome of the spell can stil be volatile and unpredictable as the multiverse often has it's own ideas.",
+						"You do not suffer any negative effects of casting the Wish spell outside it's basic use and you may never lose the ability to cast the spell innately."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mistshape",
+			"source": "VagabondChronicles",
+			"page": 2,
+			"entries": [
+				"At 14th level you gain the ability to transform your legs into a fiery trail of mist which allows you to levitate effortlessly. As a bonus action on your turn you may relinquish your legs to gain a flying speed equal to half your current speed. While transformed in this way you do not have a walking speed. The transformation lasts until you dismiss it as a bonus action on your turn.",
+				"At 18th level your flying speed becomes equal to your current speed."
+			]
+		},
+		{
+			"name": "True Form Invocation",
+			"source": "VagabondChronicles",
+			"page": 2,
+			"entries": [
+				"You've become more attuned to your legacy and have accepted your nature as the Progenitor of Flame. For you, the spell {@spell draconic transformation} becomes 'Primordial Transformation', an incantation of your true form. You have to learn the spell as normal, but once you know it you always have it prepared and it doesn't count against the number of wizard spells you prepare.",
+				"Uttering primordial words of power allows you to temporarily shed your mortal form becoming the true representation of The First Flame. Your eyes light aflame and the fires suffusing your body burn much brighter as they undertake a light blue hue. You discard your legs for a true form of fire that allows you to levitate and your entire primordial body becomes slightly larger.",
+				"While in your primordial form escaping the nature of your inhumanity becomes nearly impossible and you are affected by all applicable Memories. As your realisation as the Avatar of Fire progresses your true form will become larger, brighter and more powerful and should you find a way to reconcile with your true nature you will be able to control the side effects with perfect precision."
+			]
+		},
+		{
+			"name": "Memories of Fire and Pain",
+			"source": "VagabondChronicles",
+			"page": 2,
+			"entries": [
+				"The nature of the primordial avatar is corrupting you and slowly destroying all parts of you that are human. The painful memories of Malek's past and the agonizing screams of his victims haunt your dreams and you struggle to keep making the right decisions. Until you learn to live with your dark intuitions, painful memories and malevolent heritage you will continue paying the price of your father's sins. And if you are not strong enough, you may just lose yourself in the process.",
+				"You must learn to live with the diabolical thoughts which plague your mind and come to terms with what you have become. Until you do, you will continue to suffer the adverse effects of living at odds with your nature. Adverse effects suffered:",
+				{
+					"type": "list",
+					"items": [
+						"Memories of Pain: Vivid dreams of torment inflicted by the sadistic Malek left Adar unable to sleep. Through avoidance Adar has found a way to stop sleeping altogether. The troubling dreams are nowhere to be seen but the notion that the past still waits patiently continues to loom in Adar's mind.",
+						"Memories of Fire: An eternal life of watching the mortals toil and perish left Malek with the opinion that mortal life is worthless, seeing the aging as weak and pointless. It is unclear whether he indulged in sadistic incineration of mortals because it was a trait of his personality or his eternal nature, but one thing is clear, his viciousness persists within you still. You are, as yet, unable to resist your inherited sadistic subconscious while invoking your true form. When under the effect of your Primordial Transformation vicious wildfires erupt around you spontaneously, eager to blaze and smoulder to ash all that is living, a physical representation of Malek's uncontrolled sadism and rage. Until you learn to reign in your subconscious and defeat the demons of your past uncontrolled wildfires will continue to blaze around you. At the beginning of each of your turns a 5 foot radius wildfire erupts centered on a random creature involved in the combat encounter, regardless of alleigance to you. If the creature is flying it instead simply combusts dealing the damage once in a 5 foot radius. The wildfires persist until your transformation ends but only 3 can exist at the same time, a random wildfire is extinguished when a new one is created. You can cast your Breath Weapon with the center of any wildfire as the origin point instead of yourself, but when you do so the damage type is changed to fire. Whenever a creature enters the area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, the creature takes {@damage 6d8} fire damage, or half as much damage on a successful save."
+					]
+				}
+			]
+		},
+		{
+			"name": "Primordial Immortality",
+			"source": "VagabondChronicles",
+			"page": 2,
+			"entries": [
+				"As a primordial avatar your existence is a cosmic necessity. When you die, if you weren't killed by another primordial entity, your body vanishes and you begin a slow process of reincarnation. You are reborn after 1d10 years at a location of your choosing on the same plane that you died on. Spells such as {@spell revivify}, {@spell raise dead} and {@spell true resurrection} still work on you but they do not require contact with your body to function."
+			]
+		}
+	],
+	"race": [
+		{
+			"name": "Cambion",
+			"source": "VagabondChronicles",
+			"page": 6,
+			"creatureTypes": [
+				"humanoid"
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30,
+				"fly": 10
+			},
+			"darkvision": 60,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1,
+								1,
+								-1,
+								-1
+							]
+						}
+					}
+				}
+			],
+			"additionalSpells":[
+				{
+					"ability": "cha",
+					"known": {
+						"1": {
+							"rest": {
+								"1": [
+									"charm person"
+								]
+							}
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"infernal": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Creature Type",
+					"entries": [
+						"You are a Humanoid."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fiendish Aura",
+					"entries": [
+						"You can use your Charisma modifier, in place of Dexterity, when determining your Armor Class."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enamouring",
+					"entries": [
+						"You know the {@spell charm person} spell and may cast it without expending a spell slot. Charisma is your spell casting ability for this spell, and when cast this way you may cast it at a level equal to or less than your proficiency bonus. Once you cast {@spell charm person} with this trait, you can't cast it this way again until you finish a long rest.",
+						"You may also cast this spell using spell slots granted by the Spellcasting and Pact Magic features.",
+						"Once per day, you may cast the {@spell sending} spell on any creature you've charmed with this trait without expending a spell slot."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shape Changer",
+					"entries": [
+						"As an action, you can mask your fiendish qualities. You appear exactly as you do normally, minus any markings of beind a fiend (such as horns, tail, wings, and so on). While you are masked this way, you lose your fly speed. As an action, you may reassume your true form."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Infernal."
+					]
+				}
+			]
+		}
+	],
+	"baseitem": [
+		{
+			"name": "Tesla Rifle",
+			"source": "VagabondChronicles",
+			"page": 5,
+			"type": "R",
+			"rarity": "none",
+			"weight": 10,
+			"weaponCategory": "martial",
+			"age": "steampunk",
+			"property": [
+				"AF",
+				"RLD",
+				"2H",
+				"BF",
+				"S"
+			],
+			"range": "100/300",
+			"reload": 10,
+			"dmg1": "3d6",
+			"dmgType": "L",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "energy cell",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"Attack rolls made with the Tesla Rifle have advantage against targets wearing metal armor."
+					]
+				}
+			]
+		},
+		{
+			"name": "Explosive Grenade",
+			"source": "VagabondChronicles",
+			"page": 5,
+			"type": "EXP",
+			"rarity": "none",
+			"weight": 1,
+			"age": "steampunk",
+			"entries": [
+				"As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away.",
+				"All creatures within a 15-foot sphere of the target area must make a DC 15 Dexterity saving throw, taking {@damage 5d6} Thunder damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"name": "Smoke Grenade",
+			"source": "VagabondChronicles",
+			"page": 5,
+			"type": "EXP",
+			"rarity": "none",
+			"weight": 1,
+			"age": "steampunk",
+			"entries": [
+				"As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away.",
+				"When a smoke grenade lands, it emits a cloud of smoke that creates a heavily obscured area in a 20-foot radius. The smoke can be cleared by a moderate wind (10-20mph) in 4 rounds, or by a strong wind (above 20mph) in one round, otherwise the gas will last for 6 rounds."
+			]
+		},
+		{
+			"name": "Stun Grenade",
+			"source": "VagabondChronicles",
+			"page": 5,
+			"type": "EXP",
+			"rarity": "none",
+			"weight": 1,
+			"age": "steampunk",
+			"entries": [
+				"As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away.",
+				"All creatures within a 15-foot sphere of the target area must make a DC 15 Constitution saving throw or be {@condition stunned} until the end of your next turn."
+			]
+		},
+		{
+			"name": "Molotov Cocktail",
+			"source": "VagabondChronicles",
+			"page": 5,
+			"type": "EXP",
+			"rarity": "none",
+			"weight": 1,
+			"age": "steampunk",
+			"entries": [
+				"As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away.",
+				"All creatures within a 15-foot sphere of the target area must make a DC 15 Dexterity saving throw, taking {@damage 3d6} fire damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"name": "Knock Out Gas Grenade",
+			"source": "VagabondChronicles",
+			"page": 5,
+			"type": "EXP",
+			"rarity": "none",
+			"weight": 1,
+			"age": "steampunk",
+			"entries": [
+				"As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away.",
+				"When a Knock Out Gas grenade lands, it emits a cloud of gas that creates a heavily obscured area in a 20-foot radius. The gas can be cleared by a moderate wind (10-20mph) in 2 rounds, or by a strong wind (above 20mph) in one round, otherwise the gas will last for 3 rounds. All creatures who end their turn inside the cloud must make a DC 15 Constitution saving throw, falling {@condition unconscious} on a failed save. Targets will wake after 10 minutes have passed, upon taking damage, or until someone uses their action to shake or slap the sleepers awake. Undead, constructs, and creatures immune to being charmed aren't affected by this weapon."
+			]
+		},
+		{
+			"name": "Mustard Gas Grenade",
+			"source": "VagabondChronicles",
+			"page": 5,
+			"type": "EXP",
+			"rarity": "none",
+			"weight": 1,
+			"age": "steampunk",
+			"entries": [
+				"As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away.",
+				"When a Mustard gas grenade lands, it emits a cloud of gas that creates a heavily obscured area in a 20-foot radius. The gas can be cleared by a moderate wind (10-20mph) in 2 rounds, or by a strong wind (above 20mph) in one round, otherwise the gas will last for 3 rounds. All creatures who end their turn within the cloud must make a DC 15 Constitution saving throw, taking {@damage 5d6} poison damage on a failed save, or half damage on a successful one."
+			]
+		},
+		{
+			"name": "Hallucination Grenade",
+			"source": "VagabondChronicles",
+			"page": 5,
+			"type": "EXP",
+			"rarity": "none",
+			"weight": 1,
+			"age": "steampunk",
+			"entries": [
+				"As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away.",
+				"When a Hallucination grenade lands, it emits a cloud of gas that creates a heavily obscured area in a 20-foot radius. The gas can be cleared by a moderate wind (10-20mph) in 2 rounds, or by a strong wind (above 20mph) in one round, otherwise the gas will last for 3 rounds. All creatures who end their turn within the cloud must make a DC 15 Wisdom saving throw, becoming {@condition frightened} on a failed save. This effect lasts for 1 minute, or until the target takes damage. The source of their fear is a hallucination at the epicenter of the gas cloud."
+			]
+		},
+		{
+			"name": "Fire Obstruction Grenade",
+			"source": "VagabondChronicles",
+			"page": 5,
+			"type": "EXP",
+			"rarity": "none",
+			"weight": 1,
+			"age": "steampunk",
+			"entries": [
+				"As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away.",
+				"When a fire obstruction grenade lands it creates a wall of fire. The wall is 20 ft long, 10 ft high, and 1 ft thick. The wall is opaque and lasts for 1 minute. Any creature inside the area of the wall at its creation, or who attempts to pass through the wall must make a DC 15 Dexterity saving throw. On a failed save, a creature takes {@damage 5d8} fire damage, ar half as much damage on a successful save."
+			]
+		},
+		{
+			"name": "Flashbang Grenade",
+			"source": "VagabondChronicles",
+			"page": 5,
+			"type": "EXP",
+			"rarity": "none",
+			"weight": 1,
+			"age": "steampunk",
+			"entries": [
+				"As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away.",
+				"All creatures within a 20-foot sphere of that point must succeed on a DC 15 Dexterity saving throw or be {@condition blinded} until the end of its next turn."
+			]
+		},
+		{
+			"name": "Decoy Grenade",
+			"source": "VagabondChronicles",
+			"page": 5,
+			"type": "EXP",
+			"rarity": "none",
+			"weight": 1,
+			"age": "steampunk",
+			"entries": [
+				"As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away.",
+				"The Decoy grenade is invisible and makes no sound until it lands. Once it lands, it activates one or more of the following magical properties of your choice:",
+				{
+					"type": "list",
+					"items": [
+						"The grenade sheds bright light in a 5-foot radius and dim light for an additional 5 feet.",
+						"The grenade emits a recorded message that can be heard up to 100 feet away. You can record a message prior to using the grenade, and the recording can last for up to 1 minute.",
+						"The grenade continuously emits your choice of an odor or a nonverbal sound (wind, waves, chirping, or the like). The chosen phenomenon is perceivable up to 30 feet away.",
+						"The grenade emits a visual illusion of a creature or object no larger than a 10-foot cube. The illusion is either static or can have a moving element to it (your choice), such as a creature waving or moving slightly, though it produces no sound."
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Tinkerer",
+			"subclassFeatures": [
+				"tinkerer|Artificer|TCE|Tinkerer|VagabondChronicles|3",
+				"Jury Rigging|Artificer|TCE|Tinkerer|VagabondChronicles|5",
+				"Multifunctional Inventions|Artificer|TCE|Tinkerer|VagabondChronicles|9",
+				"Rapid Redeployment|Artificer|TCE|Tinkerer|VagabondChronicles|15"
+			],
+			"source": "VagabondChronicles",
+			"shortName": "Tinkerer",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"absorb elements|XGE",
+							"grease"
+						],
+						"5": [
+							"heat metal",
+							"find traps"
+						],
+						"9": [
+							"glyph of warding",
+							"tiny servant|XGE"
+						],
+						"13": [
+							"fabricate",
+							"summon construct|TCE"
+						],
+						"17": [
+							"animate objects",
+							"wall of light|XGE"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"absorb elements|XGE",
+				"grease",
+				"heat metal",
+				"find traps",
+				"glyph of warding",
+				"tiny construct",
+				"fabricate",
+				"summon construct|TCE",
+				"animate objects",
+				"wall of light|XGE"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Tinkerer Spells",
+			"source": "VagabondChronicles",
+			"page": 3,
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Tinkerer",
+			"subclassSource": "VagabondChronicles",
+			"level": 3,
+			"entries": [
+				"Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Tinkerer Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.",
+				{
+					"type": "table",
+					"caption": "Tinkerer Spells",
+					"colLabels": [
+						"Artificer Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell absorb elements|xge}, {@spell grease}"
+						],
+						[
+							"5th",
+							"{@spell heat metal}, {@spell find traps}"
+						],
+						[
+							"9th",
+							"{@spell glyph of warding}, {@spell tiny servant|xge}"
+						],
+						[
+							"13th",
+							"{@spell fabricate}, {@spell summon construct|tce}"
+						],
+						[
+							"17th",
+							"{@spell animate objects}, {@spell wall of light|xge}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Physical Modules",
+			"source": "VagabondChronicles",
+			"page": 3,
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Tinkerer",
+			"subclassSource": "VagabondChronicles",
+			"level": 3,
+			"entries": [
+				"Also at 3rd level, you gain the ability to craft entirely mundane, physical infusions which achieve their effects by way of science and technology rather than magic. These inventions do not interfere with the magical properties of the items they are attached to. You gain the ability to place infusions on magical items."
+			]
+		},
+		{
+			"name": "Tinkering Spirit",
+			"source": "VagabondChronicles",
+			"page": 3,
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Tinkerer",
+			"subclassSource": "VagabondChronicles",
+			"level": 3,
+			"entries": [
+				"Your wandering mind and tinkering spirit don't let you rest. You have a need to create, even if it's something menial and without clear purpose.",
+				"Beggining at 3rd level, you may use the Replicate Magic Item infusion to create any common magic item, even if you do not know this infusion. If you create a new magic item this way, all items previously created with this feature vanish, and then the new infusion applies. Common magic items replicated this way don't count against your number of infused items."
+			]
+		},
+		{
+			"name": "Rapid Redeployment",
+			"source": "VagabondChronicles",
+			"page": 3,
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Tinkerer",
+			"subclassSource": "VagabondChronicles",
+			"level": 15,
+			"entries": [
+				"Starting at 15th level, you create your inventions with the function to quickly redeploy to a different item in the case of an emergency. As a bonus action on your turn, or as a reaction to a friendly creature attacking, being attacked or making a saving throw you may move an infusion from an item to another valid item that is no further than 15 feet away. If done as a reaction the receiving item has to be worn or equipped by the triggering allied creature, and the replacement happens before the trigger resolves.",
+				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Multifunctional Inventions",
+			"source": "VagabondChronicles",
+			"page": 3,
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Tinkerer",
+			"subclassSource": "VagabondChronicles",
+			"level": 9,
+			"entries": [
+				"At 9th level, you learn how to create more pragmatic inventions that can simulatenously achieve multiple effects while remaining lightweight and practical. When you infuse an item, you can add up to a total of two infusions instead of one.",
+				"The second infusion still counts against your total number of infusions."
+			]
+		},
+		{
+			"name": "Jury Rigging",
+			"source": "VagabondChronicles",
+			"page": 3,
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Tinkerer",
+			"subclassSource": "VagabondChronicles",
+			"level": 5,
+			"entries": [
+				"At 5th level, you become an expert at quickly constructing and rearranging the components of your inventions, impetuously rebuilding them as different modules. You may now infuse items whenever you finish a short rest, as well as whenever you finish a long rest.",
+				"In addition, the maximum number of items you can infuse at once increases by 2."
+			]
+		},
+		{
+			"name": "Endless Creativity",
+			"source": "VagabondChronicles",
+			"page": 3,
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Tinkerer",
+			"subclassSource": "VagabondChronicles",
+			"level": 3,
+			"entries": [
+				"Your mind is an endless fountain of creativity. You find yourself daydreaming about all the wondrous creations you could bring to life and you are sometimes unable to contain your excitement to give them form. This ceaseless well of imagination means you are always on the path to creating something new and, in your mind, there is no limit to what you can achieve.",
+				"Your infusions are your inventions and they can take many shapes and forms but for you one thing is certain, you must always keep inventing. You no longer have a limit to the maximum number of infusions you can know and you do not learn any new infusions at higher levels like you normally would, instead you can learn new infusions from an expanded list of infusions by expending 8 hours of effort and an amount of gold equal to 50 times the amount of infusions you already know. The cost represents material components you expend as you experiment with the new inventions, as well as the tools and resources required to build the final product. The process of inventing new technology isn't easy and is prone to mishaps and failures, and can rarely be expected to work perfectly immediately. Each time you attempt to learn a new infusion there is a chance that it might fail. Make an intelligence {@item tinker's tools} check at the end of every 8 hours of work, the DC is equal to 15 + the number of infusions that you already know. If you fail you must undertake the entire process again, but this time the cost is 100 gold for each unsuccessful attempt. This check is a downtime activity check and therefore can't be affected by spells and effects that last less than the entire duration.",
+				"In addition you may choose to scrap a previously completed project in place of a promising new idea. When you begin the process of learning a new infusion this way you must choose to remove an infusion from your list of known infusions. When you do so the cost of learning this new infusion is 200 gold instead of the usual cost, and the DC is 20."
+			]
+		},
+		{
+			"name": "Tool Proficiency",
+			"source": "VagabondChronicles",
+			"page": 3,
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Tinkerer",
+			"subclassSource": "VagabondChronicles",
+			"level": 3,
+			"entries": [
+				"When you adopt this specialization at 3rd level, you gain proficiency with {@item tinker's tools}. If you already have this proficiency, you gain proficiency with one other type of {@item artisan's tools} of your choice."
+			]
+		},
+		{
+			"name": "Tinkerer",
+			"source": "VagabondChronicles",
+			"page": 2,
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Tinkerer",
+			"subclassSource": "VagabondChronicles",
+			"level": 3,
+			"entries": [
+				"An artificer who abandons the idea of specializing in a specific field of artifice, instead opting to learn whatever they are interested in at any given moment, and who is constantly jumping from project to project in order to satisfy their need to keep inventing and learning new things is called a tinkerer. These artificers with an apparent short attention span are simply people driven by everlasting curiosity and their endless creativity. Why work on a single ultimate project your entire life when you can create something new, unique and intriguing every day? This is the driving notion behind the Tinkerer's desire to never settle down in a single field of craftsmanship, for as long as they live they will have new ideas and the drive to shape them in reality. Such an approach to artifice makes one a sort of jack of all trades, who will never have a creation to call their magnum opus, but will have a tool for every occasion and the knowledge to use it.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tool Proficiency|Artificer|TCE|Tinkerer|VagabondChronicles|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tinkerer Spells|Artificer|TCE|Tinkerer|VagabondChronicles|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Endless Creativity|Artificer|TCE|Tinkerer|VagabondChronicles|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Physical Modules|Artificer|TCE|Tinkerer|VagabondChronicles|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tinkering Spirit|Artificer|TCE|Tinkerer|VagabondChronicles|3"
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Many-Handed Pouch",
+			"source": "VagabondChronicles",
+			"page": 4,
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"2-5 pouches"
+					]
+				}
+			],
+			"entries": [
+				"The infused pouches all share one interdimensional space of the same capacity as a single pouch. Thus, reaching into any of the pouches allows access to the same storage space. A pouch operates as long as it is within 100 miles of another one of the pouches; the pouch is otherwise empty and won't accept any contents.",
+				"If this infusion ends, the items stored in the shared space move into one of the pouches, determined at random. The rest of the pouches become empty."
+			]
+		},
+		{
+			"name": "Armor of Magical Agility",
+			"source": "VagabondChronicles",
+			"page": 4,
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A suit of armor (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"This armor has 6 charges. The wearer can expend the armor's charges in the following ways:",
+				{
+					"type": "list",
+					"items": [
+						"When the wearer makes a Dexterity check or a Dexterity saving throw, it can expend 1 charge to add a bonus to the roll equal to its Intelligence modifier.",
+						"As a reaction immediately after being hit by an attack, the wearer can expend 1 charge to gain a bonus to its Armor Class equal to its Intelligence modifier for that attack, potentially causing the attack to miss."
+					]
+				},
+				"The armor regains {@dice 1d6} expended charges daily at dawn."
+			]
+		},
+		{
+			"name": "Arcane Visor",
+			"source": "VagabondChronicles",
+			"page": 4,
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						}
+					},
+					"item": [
+						"A helmet, headband, goggles or glasses (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"You magically enchant your visor. While wearing the visor, you gain darkvision to a range of 60 feet. If you already have darkvision, the range of that darkvision is increased by 60 feet.",
+				"The visor has 4 charges. While wearing the visor, when you roll an Intelligence ({@skill Investigation}) or a Wisdom ({@skill Perception}) check, you can expend 1 charge in order to add your Intelligence modifier to the roll. The visor regains {@dice 1d4} charges daily at dawn.",
+				"Additionally, you have the spells {@spell detect magic} and {@spell see invisibility} prepared while wearing the visor, and you can cast them without material, verbal, or somatic components."
+			]
+		},
+		{
+			"name": "Perfume of Bewitching",
+			"source": "VagabondChronicles",
+			"page": 4,
+			"featureType": [
+				"AI"
+			],
+			"entries": [
+				"This tiny vial contains magic perfume, enough for one use. You can use an action to apply the perfume to yourself, and its effect lasts 1 hour. For the duration, you have advantage on all Charisma checks directed at humanoids. Those subjected to the perfume's effect are not aware that they've been influenced by magic."
+			]
+		},
+		{
+			"name": "Potion Injection Projector",
+			"source": "VagabondChronicles",
+			"page": 4,
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"Any crossbow or firearm"
+					]
+				}
+			],
+			"entries": [
+				"Using this infusion, you turn a crossbow or firearm into a longrange potion dispenser. While changed in this way, the crossbow or firearm cannot be used as a weapon. While holding this crossbow or firearm, you can use a bonus action to load a potion into the syringe. As an action you can fire a syringe at a creature you can see within the crossbow or firearm's normal range. Unwilling creatures can make a Dexterity saving throw against your artificer spell save DC, avoiding the syringe on a successful saving throw.",
+				"A creature hit by the crossbow or firearm's syringe gains the effect of having consumed the potion you last loaded into it."
+			]
+		},
+		{
+			"name": "Spellslinger's Sidearm",
+			"source": "VagabondChronicles",
+			"page": 4,
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"level": 3
+					},
+					"item": [
+						"A rod, staff, or wand (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"While holding this item, a creature who makes a spell attack roll can reroll any damage dice that show 1 or 2. They must use the second result."
+			]
+		},
+		{
+			"name": "Elemental Converter",
+			"source": "VagabondChronicles",
+			"page": 4,
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"level": 5
+					},
+					"item": [
+						"A simple or martial ranged weapon"
+					]
+				}
+			],
+			"entries": [
+				"A ranged attack with a weapon that has this converter attached counts as a melee attack for the purposes of dealing extra damage with the {@spell absorb elements|xge} spell, regardless of whether the attack is melee or ranged. The damage dealt by the spell is increased by {@damage 1d6}.",
+				"When you reach 10th level in this class, the extra damage dealt by the spell is increased to {@damage 2d6}."
+			]
+		},
+		{
+			"name": "Arcane Conduit",
+			"source": "VagabondChronicles",
+			"page": 4,
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A rod, staff, or wand (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"While holding this item, a creature gains a +1 bonus to the saving throw DCs of its spells. In addition, you can add your Intelligence modifier to one damage roll of those spells.",
+				"The bonus increases to +2 when you reach 10th level in this class."
+			]
+		}
+	]
+}
